@@ -172,7 +172,7 @@ const MoodMusicPlayer = () => {
       formData.append('image', blob, 'capture.jpg');
 
       try {
-        const response = await fetch('http://192.168.1.13:5000/detect_emotion', {
+        const response = await fetch('https://192.168.1.13:5000/detect_emotion', {
           method: 'POST',
           body: formData
         });
